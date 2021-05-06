@@ -1,0 +1,326 @@
+/*
+    SSM Colors
+    Navy: RGB 0, 31, 95   #001f5f
+    Teal: RGB 0, 131, 155   #00839b
+    Orange:  RGB 225, 88, 41  #e15829
+    Light Gray: RGB 179, 178, 177  #b3b2b1
+    Dark Gray:  RGB 119, 119, 122   #999990
+    Yellow: RGB 246, 178, 33  #f6b221
+    Purple: RGB 117, 47, 138  #752f8a
+    Maroon: RGB 139, 35, 50  #8b2332
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background: #001f5f;
+}
+
+
+.form-body label {
+    position: relative;
+}
+
+    .form-body label span {
+        position: absolute;
+        top: 0;
+        right: -10px;
+    }
+
+hr {
+    border-top: 2px solid #00839b !important;
+}
+
+.btn-primary {
+    background-color: #00839b !important;
+}
+
+table {
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+}
+
+th {
+    text-align: left;
+    border-right: 1px solid #aaa;
+    border-bottom: 2px solid #00839b;
+    color: #001f5f;
+    font-weight: bold;
+    background: #cecdcd;
+    width: 50px;
+    padding: 5px;
+    height: 50px;
+    position: sticky;
+    top: -1px;
+}
+
+tr:nth-child(odd) {
+    background: #f0eeed;
+}
+
+label {
+    margin-bottom: 0 !important;
+    display: inline;
+}
+
+.label {
+    font-size: 1em !important;
+    height: 25px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+}
+
+.form-body .row input {
+    margin: 5px 10px 0 0;
+}
+
+.form-body .row div span {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+
+.wrapper {
+    margin: 0px;
+    padding: 0px;
+    background-color: white;
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+header {
+    background-image: url(https://resources.ssmhealth.com/img/SSM-Blue-Swirl-Background.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 125px;
+    border-top: 1px #6c6f71 solid;
+    min-width: 320px;
+    background-size: cover;
+    padding-top: 10px;
+    position: relative;
+}
+
+.header-content {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.logo {
+    width: 50%;
+    float: left;
+}
+
+header .slogan {
+    width: 50%;
+    float: left;
+    margin: 10px 0 0;
+}
+
+    header .slogan p {
+        color: #fff;
+        float: right;
+        font-size: 1.5em;
+        line-height: 22px;
+        text-align: right;
+        vertical-align: middle;
+        width: 370px;
+        margin-top: 18px;
+        padding-right: 30px;
+    }
+
+.main-content {
+    width: 88%;
+    margin: 0 auto !important;
+    box-shadow: -10px 0px 40px #ccc, 10px 0px 40px #ccc;
+    padding: 25px 15px !important;
+    min-height: 78vh;
+}
+
+h2 {
+    margin: 0 0 15px !important;
+    color: #001f5f;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #ccc;
+}
+
+#control-area {
+    background-color: #999990;
+    color: #fff;
+    font-size: 14px;
+    height: 34px;
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+}
+
+.warn {
+    color: red;
+}
+
+.warning {
+    border: 3px solid red;
+    padding: 15px !important;
+}
+
+
+footer {
+    color: #fff;
+    text-align: center;
+    background-color: #02255b;
+    height: 40px;
+    clear: both;
+}
+
+.footer-content {
+    width: 88%;
+    margin: 0 auto;
+}
+
+footer .footer-left {
+    float: left;
+    max-width: 562px;
+    width: 100%;
+    padding-left: 15px;
+}
+
+footer .footer-right {
+    float: left;
+    width: 100%;
+}
+
+footer ul {
+    margin: 4px 0 0 0;
+    padding: 0;
+}
+
+footer .footer-right ul {
+    float: right;
+}
+
+footer ul li {
+    border-right: 1px solid #6c6f71;
+    color: #f2f2f2;
+    float: left;
+    font-size: 12px;
+    height: 14px;
+    list-style-type: none;
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+}
+
+    footer ul li.last {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+footer a {
+    color: #ffffff;
+}
+
+
+
+.ssmWarningBox {
+    display: block;
+    background-color: #dcdcdc;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.ssmBox {
+    border: 1px solid #afafaf;
+    font-size: 13px;
+    border-radius: 2px;
+    padding: 4px;
+}
+
+.nonprod {
+    background: rgba(255, 0, 0, 0.5);
+    width: 100%;
+    padding: 2px 20px;
+    text-align: right;
+    padding-right: 20px;
+    position: absolute;
+    z-index: 9999;
+    font-size: 1em;
+    color: white;
+    font-weight: bolder;
+}
+
+.nonprod-inner {
+    text-align: center;
+}
+
+.label {
+    color: #000000;
+}
+
+.modal-dialog {
+    width: 85%;
+}
+
+@media (max-width: 768px) {
+
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 640px) {
+
+    header {
+        height: 225px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+        .logo img {
+        }
+
+    header .slogan p {
+        text-align: center;
+        margin: 10px 0 0;
+        padding: 0;
+    }
+
+    header .slogan {
+        width: 100%;
+        float: none;
+        margin: 10px 0 0;
+    }
+
+        header .slogan p {
+            float: none;
+            width: 100%;
+        }
+
+    .main-content {
+        width: 100%;
+        margin: 0 auto !important;
+        box-shadow: none;
+        padding: 25px 15px !important;
+        min-height: 500px;
+    }
+}

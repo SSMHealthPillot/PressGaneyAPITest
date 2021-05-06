@@ -1,0 +1,13 @@
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\PhyndAPI.DATA.dll
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\PhyndAPI.DATA.pdb
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\Dapper.dll
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\SSMDapper.dll
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\Dapper.xml
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\SSMDapper.pdb
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\SSMDapper.dll.config
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\obj\Debug\PhyndAPI.DATA.csprojAssemblyReference.cache
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\obj\Debug\PhyndAPI.DATA.csproj.CoreCompileInputs.cache
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\obj\Debug\PhyndAPI.DATA.csproj.CopyComplete
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\obj\Debug\PhyndAPI.DATA.dll
+C:\Users\drudoo\Source\Repos\PhyndAPI\PhyndAPI.DATA\obj\Debug\PhyndAPI.DATA.pdb
+C:\Users\drudoo\source\repos\PhyndAPI\PhyndAPI.DATA\bin\Debug\Oracle.ManagedDataAccess.dll

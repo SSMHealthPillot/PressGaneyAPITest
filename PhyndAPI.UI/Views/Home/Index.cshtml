@@ -1,0 +1,92 @@
+@using PhyndAPI.DATA.Models;
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Auth0 API Tester</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-3">
+        <h4>NPI(s)</h4>
+        @Html.TextBox("NPIList");
+    </div>
+    <div class="col-md-3">
+        <h4>Max Comments</h4>
+        @Html.TextBox("MaxComments")
+    </div>
+    <div class="col-md-3">
+        <h4>Page #</h4>
+        @Html.TextBox("PageNum")
+    </div>
+    <div class="col-md-3">
+        <h4>Page Size</h4>
+        @Html.TextBox("PageSize")
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <h3>Click to test Calling API without Auth0 process</h3>
+        @Html.ActionLink("No Auth0 authentication", "TestAPI_NoAuth", null, new { @class = "btn btn-primary", @id = "btnNoAuth" })
+    </div>
+    <div class="col-md-6">
+        <h3>Click to test Calling API WITH Auth0 process</h3>
+        @Html.ActionLink("Using Auth0 authentication", "TestAPI_WithAuth", null, new { @class = "btn btn-primary", @id = "btnAuth" })
+    </div>
+</div>
+<br />
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <h2>Results:</h2>
+        @if (!String.IsNullOrWhiteSpace(ViewBag.Result))
+        {
+            @Html.Raw((string)ViewBag.Result)
+        }
+        @if (ViewData["Comments"] != null)
+        {
+            <table>
+                <tr>
+                    <th>Start #</th>
+                    <th>End #</th>
+                    <th>Total</th>
+                    <th>NPI</th>
+                    <th>Timestamp</th>
+                    <th>Question ID</th>
+                    <th>Star Rating</th>
+                    <th>Comment</th>
+                </tr>
+                @foreach (PGComment comment in (IEnumerable<PGComment>)ViewData["Comments"])
+                {
+                    <tr>
+                        <td>@comment.startRecord</td>
+                        <td>@comment.endRecord</td>
+                        <td>@comment.TotalRecords</td>
+                        <td>@comment.NPI</td>
+                        <td>@comment.CommentDateTime</td>
+                        <td>@comment.QuestionId</td>
+                        <td>@comment.StarRating</td>
+                        <td>@comment.Comment</td>
+                    </tr>
+                }
+            </table>
+        }
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        $(function () {
+            $('#btnAuth,#btnNoAuth').click(function () {
+                var NPIs = $('#NPIList').val();
+                var comments = $('#MaxComments').val();
+                var pageNum = $('#PageNum').val();
+                var pageSize = $('#PageSize').val();
+                this.href = this.href + '?npiList=' + encodeURIComponent(NPIs);
+                this.href = this.href + '&maxComments=' + encodeURIComponent(comments);
+                this.href = this.href + '&pageNum=' + encodeURIComponent(pageNum);
+                this.href = this.href + '&pageSize=' + encodeURIComponent(pageSize);
+            });
+        });
+    })
+</script>
